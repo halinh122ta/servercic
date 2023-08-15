@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets//css/style.css">
+    <title>Đăng nhập</title>
+</head>
+<body>
+    <section>
+        <div class="login">
+            <h1>Nttbchecker.vn</h1>
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="text" class="username" required>
+                <label for="">Tên đăng nhập</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" class="password" required>
+                <label for="">Mật khẩu</label>
+            </div>
+            <div class="forget">
+            </div>
+            <button class="submit">Đăng nhập</button>
+            <div class="register">
+                <div class="forget">
+                    <a href="register.html" style="color: aliceblue;">Đăng ký tài khoản</a>
+                </div>
+                <div class="forget">
+                    <a href="/" style="color: aliceblue;">Về trang chủ</a>
+                </div>
+            </div>
+        </div>
+        <script>
+            const load = () => {
+                const user = localStorage.getItem("user") || null
+                if(user != null && user.length > 10){ console.log("Có tài khoản")
+                    location.href = '/'
+                }else{
+                        console.log("Chưa đăng nhập tài khoản")
+                }
+            }
+            load()
+            window.onload = function()
+            {
+                const submit = document.querySelector('.submit');
+                submit.addEventListener('click',()=>{
+                    var username = document.getElementsByClassName('username')[0].value;
+                    var password =  document.getElementsByClassName('password')[0].value;
+                    axios.post('api/user/login', {
+                        username,
+                        password
+                    })
+                        .then((response) => {
+                            var res = response.data
+                            if(res.success == true){
+                                localStorage.setItem('user',JSON.stringify(res))
+                                if(res.data.role == 2){
+                                    location.href = '/admin/home.html'
+                                }else{
+                                    location.href = '/'
+                                }
+                            }else{
+                                alert("Đăng nhập thất bại")
+                            }
+                            // handle success response
+                        })
+                        .catch((error) => {
+                            console.error(error);
+                            // handle error response
+                    });
+                })
+            }
+        </script>
+    </section>
+</body>
+</html>
+<style>
+    input{
+        background: transparent;
+    }
+</style>

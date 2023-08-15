@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins',sans-serif;
+}
+.row{
+    margin: 0;
+}
+body {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  min-height: 100vh;
+  background:url('../img/back.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.toast{
+    margin-right: 10px;    
+    margin-left: auto;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header-letf{
+    position: relative;
+}
+.header-letf a{
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+}
+.lookat{
+    position: absolute;
+    min-width: 200px;
+    background-color: rgb(208, 233, 255);
+    font-size: 0.5em;
+    padding-bottom: 20px;
+    display: none;
+}
+.show-menu{
+    display:block;
+}
+.lookat .menu{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    padding: 15px 0px;
+}
+.lookat .menu li{
+    padding: 6px 15px;
+}
+.menu li a{
+    color: black;
+    text-decoration: none;
+    width: 100%;
+}
+.menu li i{
+   width: 20px;
+   margin-left: auto;
+}
+.lookat .menu li:hover{
+    background-color: rgb(67, 95, 255);
+    cursor: pointer;
+}
+.lookat .menu li:hover a{
+   color: white;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/* Submeny  */
+.menu_item{
+    position: relative;
+}
+.menu_item:hover .sub-menu{
+    visibility: visible;
+    opacity: 1;    
+}
+.menu_item:hover .sub-menu li a{
+    color: rgb(78, 78, 255);
+}
+.sub-menu{
+    position: absolute;
+    top: 0;
+    left: calc(100%);
+    min-width: 200px;
+    padding: 10px 0px;
+    background-color: rgb(208, 233, 255);
+    visibility: hidden;
+    opacity: 0;    
+}
+.sub-menu__item:hover a{
+    color: white !important;
+}
+/* Bank */
+.bank{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.322);
+    min-height: 100%;
+    display: none;
+}
+.bank-content{
+    width: 360px;
+    background-color: white;
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+    padding: 10px;
+    padding-top: 30px;
+    position: relative;
+}
+.bank-content p{
+   font-size: 0.8em;
+   padding: 0;
+   margin: 0;
+}
+.show_bank{
+    display: block;
+}
+.close-bank{
+    text-align: end;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+.close-bank a{
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.bank .input-group{
+    text-align: center;
+}
+#bank_money{
+    width: 150px;
+    font-size: 16px;
+    padding: 2px 10px;
+    border: 1px solid rgba(128, 128, 128, 0.24);
+}
+.bank_infoadd{
+    color: blue;
+}
+.pay_content{
+    padding: 4px 0px !important;
+}
+/* .bank .image{
+    width: 90%;
+} */
+/* Phần nội dung */
+.router{
+    /* background-color: rgb(65, 0, 168); */
+    padding: 10px;
+    border-radius: 15px;
+    min-height: 90vh;
+    background-image: url('https://thuthuatnhanh.com/wp-content/uploads/2023/06/hinh-nen-may-tinh-4k-don-gian-ma-dep-chill.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: none;
+}
+.main_title{
+    text-align: center;
+    padding: 10px;
+}
+.about{
+    text-align: start;
+}
+.row_about{
+    text-align: center;
+    padding-top: 50px;
+}
+.row_about ul{
+    padding: 0;
+}
+.row_about ul li{
+    padding: 5px;
+}
+.row_about .row_about-img{
+    width: 100%;
+}
+/* account */
+.avata img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.information{}
+.btn-warning{
+    color: white !important;
+}
+.btn-info{
+    color: white !important;
+}
+.information_item span{
+    color: rgb(45 255 73);
+}
+.information_item .balance{
+    color: rgb(13, 255, 142);
+}
+.btn{
+    margin-right: 5px;
+}
+.shows_creen{
+    display: block;
+}
+.cicchecker_title{
+    text-align: center;
+    padding: 10px;
+}
+.form-input{
+    max-width: 600px !important;
+    margin: auto;
+    text-align: center;
+}
+.form-input textarea{
+    width: 100%;
+    min-height: 50vh;
+    padding: 10px;
+    outline: none;
+}
+.hidden{
+    display: none;
+}
+/* orther */
+.statistical{
+    width: 330px;
+    margin: auto;
+    margin-top: 5px;
+}
+.statistical_item{
+    width: calc(100% / 3);
+}
+.statis{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: yellowgreen;
+    font-size: 11px;
+    padding-top: 22px;
+}
+.statis_title{
+    width: 80px;
+    margin: auto;
+}
+.statis_result{
+    font-size: 11px;
+}
+.statis_result .view{
+    font-size: 13px;
+}
+.statistical_title{
+    margin-top: 40px;
+    text-align: start;
+}
+.note{
+    margin-top: 35px;
+}

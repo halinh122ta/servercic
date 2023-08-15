@@ -1,0 +1,3137 @@
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+Error: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'field list'
+    at Sequence._packetToError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Protocol._enqueue (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:198:25)
+    at /home/taichi10/taichinhs37sieutoc/model/cic.js:95:15
+    at new Promise (<anonymous>)
+    at Object.setHistorys (/home/taichi10/taichinhs37sieutoc/model/cic.js:94:10)
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:228:19
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: "Unknown column 'NaN' in 'field list'",
+  sqlState: '42S22',
+  index: 0,
+  sql: "INSERT INTO `historys`(`name`, `add`, `balance`) VALUES ('tuyettrinh',NaN,NaN)"
+}
+
+Node.js v18.14.1
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.14.1
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+Error: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'field list'
+    at Sequence._packetToError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+    at Protocol._parsePacket (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    --------------------
+    at Protocol._enqueue (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Connection.query (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:198:25)
+    at /home/taichi10/taichinhs37sieutoc/model/cic.js:95:15
+    at new Promise (<anonymous>)
+    at Object.setHistorys (/home/taichi10/taichinhs37sieutoc/model/cic.js:94:10)
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:228:19
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: "Unknown column 'NaN' in 'field list'",
+  sqlState: '42S22',
+  index: 0,
+  sql: "INSERT INTO `historys`(`name`, `add`, `balance`) VALUES ('thunghiem',NaN,NaN)"
+}
+
+Node.js v18.14.1
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.14.1
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.14.1
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.14.1
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.14.1
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Packets out of order. Got: 1 Expected: 13
+    at Parser._tryReadPacketHeader (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Parser.js:470:15)
+    at Parser.write (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Parser.js:33:29)
+    at Protocol.write (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleParserError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:380:10)
+    at Parser._tryReadPacketHeader (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Parser.js:478:10)
+    at Parser.write (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Parser.js:33:29)
+    [... lines matching original stack trace ...]
+    at Socket.emit (node:events:513:28) {
+  code: 'PROTOCOL_PACKETS_OUT_OF_ORDER',
+  fatal: true
+}
+
+Node.js v18.14.1
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Packets out of order. Got: 1 Expected: 2
+    at Parser._tryReadPacketHeader (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Parser.js:470:15)
+    at Parser.write (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Parser.js:33:29)
+    at Protocol.write (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleParserError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:380:10)
+    at Parser._tryReadPacketHeader (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Parser.js:478:10)
+    at Parser.write (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Parser.js:33:29)
+    [... lines matching original stack trace ...]
+    at Socket.emit (node:events:513:28) {
+  code: 'PROTOCOL_PACKETS_OUT_OF_ORDER',
+  fatal: true
+}
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:133
+        if(result.message.includes("đúng hoặc đã đăng nhập") || result.message.includes("Bạn không có quyền")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:133:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Packets out of order. Got: 1 Expected: 13
+    at Parser._tryReadPacketHeader (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Parser.js:470:15)
+    at Parser.write (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Parser.js:33:29)
+    at Protocol.write (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleParserError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:380:10)
+    at Parser._tryReadPacketHeader (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Parser.js:478:10)
+    at Parser.write (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Parser.js:33:29)
+    [... lines matching original stack trace ...]
+    at Socket.emit (node:events:513:28) {
+  code: 'PROTOCOL_PACKETS_OUT_OF_ORDER',
+  fatal: true
+}
+
+Node.js v18.14.1
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Packets out of order. Got: 1 Expected: 80
+    at Parser._tryReadPacketHeader (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Parser.js:470:15)
+    at Parser.write (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Parser.js:33:29)
+    at Protocol.write (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:88:28)
+    at Socket.<anonymous> (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleParserError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:380:10)
+    at Parser._tryReadPacketHeader (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Parser.js:478:10)
+    at Parser.write (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Parser.js:33:29)
+    [... lines matching original stack trace ...]
+    at Socket.emit (node:events:513:28) {
+  code: 'PROTOCOL_PACKETS_OUT_OF_ORDER',
+  fatal: true
+}
+
+Node.js v18.14.1
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.14.1
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.14.1
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.14.1
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.14.1
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.14.1
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.14.1
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.14.1
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.14.1
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.14.1
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.16.0
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.16.0
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.16.0
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.16.0
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.16.0
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.16.0
+/home/taichi10/taichinhs37sieutoc/api/index.js:122
+        if(result.message.includes("không đúng hoặc đã đăng nhập") || result.message.includes("Lỗi kiểm tra thông tin")){
+                          ^
+
+TypeError: Cannot read properties of undefined (reading 'includes')
+    at /home/taichi10/taichinhs37sieutoc/api/index.js:122:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.16.0
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.16.0
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.16.0
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.16.0
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.16.0
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.16.0
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.16.0
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.16.0
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.16.0
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.16.0
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.16.0
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:423:8)
+    at Protocol.emit (node:events:513:28)
+    at Protocol._delegateError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/protocol/Protocol.js:371:10)
+    at Connection._handleNetworkError (/home/taichi10/taichinhs37sieutoc/node_modules/mysql/lib/Connection.js:418:18)
+    at Socket.emit (node:events:513:28)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read',
+  fatal: true
+}
+
+Node.js v18.16.0

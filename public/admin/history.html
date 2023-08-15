@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <script src="../assets/js/axios.min.js"></script>
+    <script src="../assets/js/FileSaver.min.js"></script>
+    <title>Trang chủ</title>
+</head>
+<body>
+    <div id="viewport">
+        <!-- Sidebar -->
+        <div id="sidebar">
+          <header>
+            <a href="#">Quản lý</a>
+          </header>
+          <ul class="nav">
+            <li>
+              <a href="./home.html">
+                <i class="zmdi zmdi-view-dashboard"></i> Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="./price.html">
+                <i class="zmdi zmdi-link"></i> Set Giá
+              </a>
+            </li>
+            <li>
+              <a href="./history.html">
+                <i class="zmdi zmdi-link"></i> Lịch sử nạp
+              </a>
+            </li>
+            <li>
+              <a class="logout" style="cursor: pointer;">
+                <i class="zmdi zmdi-comment-more"></i> Logout
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Content -->
+        <div id="content">=
+          <div class="container-fluid">
+            <div class="button-group flex">
+            </div>
+            <style>
+              .content-table{
+                width: 100%;
+                overflow: auto;
+              }
+            </style>
+            <div class="content-table">
+              <div class="btn-group flex">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                  </div>
+                  <input type="date" class="form-control start" >
+                </div>
+
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                  </div>
+                  <input type="date" class="form-control end" >
+                </div>
+                <div class="input-group mb-3">
+                  <button type="button" class="btn btn-primary">Lọc kết quả</button>
+                </div>
+              </div>
+              <div class="btn-text flex">
+                <div class="input-group mb-3">
+                  Tổng nạp: <span class="balance">0</span>
+                </div>
+              </div>
+              <h3>Danh sách nạp tiền <span class="count"></span></h3>
+              <table class="table table-bordered border-primary" style="width: 100%;overflow-x: scroll;">
+                  <thead>
+                      <th scope="row" style="width:70px;">STT</th>
+                      <th scope="row">Tên tài khoản</th>
+                      <th scope="row">Số tiền</th>
+                      <th scope="row">Số dư (sau khi nạp)</th>
+                      <th scope="row">Thời gian</th>
+                  </thead>
+                  <tbody class="table-content">
+                      
+                  </tbody>
+              </table>
+          </div>
+          </div>
+        </div>
+        </div>
+      <style>
+        .main-pop{
+          position: fixed;
+          width:100%;
+          top:0;
+          left:0;
+          min-height:100vh;
+          z-index: 9999;
+          display: none;
+        }
+        .main-pop .show{
+          display: block;
+        }
+        .flex{
+          display: flex;
+        }
+        .btn-close{
+          margin-left: auto;
+        }
+        .input-group{
+          margin-bottom: 10px;
+          width: 100%;
+        }
+        .input-group input{
+          width: 100%;
+        }
+      </style>
+      <script>
+        let apiKey;
+        async function checkLocal(){
+            var user = await localStorage.getItem('user')||undefined
+            if(user != undefined && user.length > 10){
+                var json = JSON.parse(user)
+                apiKey = json.data.apikey
+                axios.post('../api/user/admin', {
+                    apikey:apiKey
+                }).then((response) => {
+                    var res = response.data
+                    if(res.success != true){
+                        location.href = '/'
+                    }
+                    // handle success response
+                })
+            }else{
+              location.href = '/login.html'
+            }
+        }
+        checkLocal()
+        window.onload = function()
+        {
+            const logout = document.querySelector('.logout');
+            const startBtn = document.querySelector('.start');
+            const endBtn = document.querySelector('.end');
+            const btnPrimary = document.querySelector('.btn-primary');
+            const table = document.querySelector('.table-content');
+            const balance = document.querySelector('.balance');
+            btnPrimary.addEventListener('click',(e)=>{
+                axios.post('../api/user/historys',{
+                  start:startBtn.value,
+                  end:endBtn.value,
+                  apikey:apiKey
+                })
+                .then((response) => {
+                   clearTable()
+                    var res = response.data
+                    if(res.success = true){
+                      var rows = res.data
+                      let number = 0;
+                      for(let i = 0; i < rows.length;i++){
+                        var tr = createRow(rows[i],i+1)
+                        table.appendChild(tr)
+                        number += parseInt(rows[i].add)
+                      }
+                      balance.textContent = number;
+                    }else{
+                      alert(res.msg)}
+                    // handle success response
+                })
+              })
+            logout.addEventListener('click',async ()=>{
+                var user = await localStorage.setItem('user',"")
+                location.href = '/'
+            })
+            //phần thực hiện quy trình
+            function createRow(item,index){
+              var tr = document.createElement('tr');
+              tr.className = "row-"+item.id
+              //hàng 1
+              var td = document.createElement('td');
+              td.textContent = index + ""
+              tr.appendChild(td)
+              //
+              var td = document.createElement('td');
+              var input = document.createElement('span');
+              input.textContent = item.name
+              td.appendChild(input)
+              tr.appendChild(td)
+              //
+              var td = document.createElement('td');
+              var input = document.createElement('span');
+              input.textContent = item.add
+              td.appendChild(input)
+              tr.appendChild(td)
+              //
+              var td = document.createElement('td');
+              var input = document.createElement('span');
+              input.textContent = item.balance
+              td.appendChild(input)
+              tr.appendChild(td)
+              //
+              var td = document.createElement('td');
+              var input = document.createElement('span');
+              input.textContent = trainsiDta(item.timestemp)
+              td.appendChild(input)
+              tr.appendChild(td)
+              //
+              return tr
+            }
+            function clearTable() {
+              table.innerHTML = ""
+            }
+            function trainsiDta(timestamp){
+              const dateTime = new Date(timestamp);
+              const formattedDateTime = `${dateTime.toLocaleTimeString()} ${dateTime.toLocaleDateString()}`;
+              console.log(formattedDateTime);
+              return formattedDateTime
+            }
+            function getDate(){
+              const date = new Date();
+              const hours = date.getHours().toString().padStart(2, '0');
+              const minutes = date.getMinutes().toString().padStart(2, '0');
+              const seconds = date.getSeconds().toString().padStart(2, '0');
+              const day = date.getDate().toString().padStart(2, '0');
+              const month = (date.getMonth() + 1).toString().padStart(2, '0');
+              const year = date.getFullYear().toString();
+              const formattedDate = `${hours}_${minutes}_${seconds}_${day}_${month}_${year}`;
+              console.log(formattedDate);
+              return formattedDate
+            }
+          };
+     </script>
+</body>
+</html>

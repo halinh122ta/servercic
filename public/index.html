@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!-- or -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <!-- Latest compiled JavaScript -->
+  <link rel="stylesheet" href="./assets//css/main.css">
+  <title>Nttbchecker.vn - Trung tâm giới tài chính</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- <button id="toastbtn">Click</button> -->
+    <div class="site">
+      <div class="header flex">
+        <div class="header-letf">
+          <a class="button-show"><i class='bx bx-menu'></i></a>
+          <div class="lookat">
+            <ul class="menu">
+              <li class="menu_item"><a href="/"><i class='bx bx-home-alt-2'></i> Trang chủ</a></li>
+              <li class="menu_item"><a href="#"><i class='bx bx-note'></i> Giới thiệu</a></li>
+              <li class="menu_item"><a href="#"><i class='bx bx-server'></i> Dịch vụ <i
+                    class='bx bx-chevron-down'></i></a>
+                <ul class="sub-menu">
+                  <li class="sub-menu__item cic_checker"><a><i class='bx bx-check-circle'></i> Kiểm tra CIC</a></li>
+                  <li class="sub-menu__item"><a><i class='bx bx-user-check'></i> Kiểm tra BM</a></li>
+                </ul>
+              </li>
+              <li class="menu_item"><a href="#"><i class='bx bx-credit-card'></i> Nạp tiền <i
+                    class='bx bx-chevron-down'></i></a>
+                <ul class="sub-menu">
+                  <li class="sub-menu__item"><a class="bxs-bank_btn"><i class='bx bxs-bank'></i> Ngân hàng</a></li>
+                  <li class="sub-menu__item"><a><i class='bx bx-credit-card-front'></i> Momo</a></li>
+                </ul>
+              </li>
+              <li class="menu_item"><a href="#"><i class='bx bx-git-repo-forked'></i> Kết nối</a></li>
+              <li class="menu_item login_hidden hidden"><a href="./login.html"><i class='bx bx-user'></i> Đăng nhập</a></li>
+              <li class="menu_item login_hidden hidden"><a href="./register.html"><i class='bx bx-user-plus'></i> Đăng ký</a></li>
+              <li class="menu_item"><a>
+
+                </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header-right">
+
+        </div>
+      </div>
+      <div class="content">
+        <!-- Phần nội dung -->
+        <div class="container">
+          <div class="router main shows_creen">
+            <div class="row main_title">
+              <h2 style="padding: 15px;">Trang chủ Nttbchecker.vn</h2>
+            </div>
+            <div class="row" style="margin-left: 0;">
+              <div class="row_about col-xl-6 col-md-6 col-12">
+                <div class="account">
+                 <!-- Đã đăng nhập -->
+                   <div class="account_title hidden">
+                       <div class="avata">
+                         <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/c/c1/Nh%C3%A2n_v%E1%BA%ADt_v%E1%BA%BD_theo_phong_c%C3%A1ch_anime_-_manga_%C4%91%C6%B0%E1%BB%A3c_t%E1%BA%A1o_t%E1%BB%B1_%C4%91%E1%BB%99ng_b%E1%BB%9Fi_AI_%282%29.jpeg/484px-Nh%C3%A2n_v%E1%BA%ADt_v%E1%BA%BD_theo_phong_c%C3%A1ch_anime_-_manga_%C4%91%C6%B0%E1%BB%A3c_t%E1%BA%A1o_t%E1%BB%B1_%C4%91%E1%BB%99ng_b%E1%BB%9Fi_AI_%282%29.jpeg" alt="">
+                       </div><br>
+                       <h4>Thông tin tài khoản</h4>
+                       <ul class="information">
+                          <li class="information_item">
+                             <div class="name">Tên tài khoản: <span>DINH VIET DUY</span></div>
+                          </li>
+                          <li class="information_item">
+                             <div class="username">Tên đăng nhập: <span>dinhvietduy</span></div>
+                         </li>
+                         <li class="information_item">
+                           <div class="phonenumber">Vị trí: <span>Hòa Bình</span></div>
+                         </li>
+                         <li class="information_item">
+                           <div class="phonenumber">Số dư tài khoản: <span class="balance">10.000 đ</span></div>
+                         </li>
+
+                       </ul>
+                       <div class="btn-group">
+                         <button type="button" class="btn btn-info">Chỉnh sửa</button>
+                         <button type="button" class="btn btn-warning bxs-bank_btn">Nạp tiền</button>
+                         <button type="button" class="btn btn-danger logout">Đăng xuất</button>
+                       </div>
+                   </div>
+                   <div class="login hidden">
+                     <div class="login_title">
+                       <h4>Bạn cần đăng nhập tài khoản để dùng dịch vụ</h4>
+                     </div>
+                     <a type="button" class="btn btn-primary" href="./login.html">Đăng nhập</a>
+                     <a type="button" class="btn btn-primary" href="./register.html">Đăng ký</a>
+                   </div>
+                </div>
+             </div>
+              <div class="row_about col-xl-6 col-md-6 col-12">
+                <h5 class="about">Hệ thống kiểm tra thông tin uy tín nhất Việt Nam</h5>
+                <h6 class="service">Dịch vụ mà chúng tôi cung cấp:</h6>
+                <ul class="service">
+                  <li class="service_item"><i class='bx bx-downvote' ></i></li>
+                  <li class="service_item">
+                    <button type="button" style="min-width: 200px;" class="btn btn-info cic_checker"><span class="spinner-grow spinner-grow-sm"></span> Dịch vụ kiểm tra CIC</button>
+                  </li>
+                  <!-- <li class="service_item">
+                    <i class='bx bxs-chevrons-right' ></i> 
+                    <button type="button" style="min-width: 200px;" class="btn btn-info"> <span class="spinner-grow spinner-grow-sm"></span> Kiểm tra dịch bệnh</button>
+                  </li> -->
+                </ul>
+                <h5 class="statistical_title">Thống kê hoạt động hiện tại</h5>
+                <ul class="statistical flex">
+                   <li class="statistical_item">
+                     <div class="statis">
+                        <div class="statis_title">Lượt truy cập hôm nay</div>
+                        <div class="statis_result"><span class="view">1.548</span><span> Lượt</span></div>
+                     </div>
+                   </li>
+                   <li class="statistical_item">
+                    <div class="statis">
+                      <div class="statis_title">Lượt kiểm tra hôm nay</div>
+                      <div class="statis_result"><span class="view">405</span><span> Lượt</span></div>
+                    </div>
+                  </li>
+                  <li class="statistical_item">
+                    <div class="statis">
+                      <div class="statis_title">Tỷ lệ hoàn thành</div>
+                      <div class="statis_result"><span class="view">100</span><span> %</span></div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="note">
+                  <p>Chi tiết: Mọi thông tin được cập nhật tức thời, hệ thống luôn đảm bảo chất lượng của dữ liệu tra khảo, để có trải nghiệm tốt nhất hãy kết nối với cộng đồng chúng tôi, <a href="#">liên hệ ngay !</a></p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <!-- Phần kiểm tra CIC -->
+          <div class="router cicchecker">
+            <div class="row cicchecker_title">
+              <h2 style="padding: 15px;">Kiểm tra CIC</h2>
+            </div>
+            <div class="row" style="margin-left: 0;">
+                <div class="form-input">
+                  <p style="text-align: center;font-size: 13px;">Vui lòng sử dụng vào mục đích hợp lệ, bạn sẽ có trách nhiệm với dữ liệu cá nhân của mình</p>
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Tên khách hàng:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="cic" class="form-label">Mã CIC:</label>
+                    <input type="text" class="form-control" id="cic" placeholder="Enter cic" name="cic">
+                  </div>
+                  <div class="mb-3">
+                    <button type="button" class="btn btn-primary">Kiểm tra dữ liệu</button>
+                  </div>
+                </div>
+                <div class="form-input">
+                  <textarea name="cic_result" id="cic_result" readonly></textarea>
+                </div>
+            </div>
+            <div class="end_page" style="text-align: center;margin-top: 20px;">
+              <a href="/" style="text-decoration:underline;color: white;">Về trang chủ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup">
+        <!-- Popup ngân hàng -->
+        <div class="bank">
+          <div class="bank-content">
+            <div class="close-bank">
+              <a class="close-bank-a">x</a>
+            </div>
+            <h5 class="title">
+              Nạp tiền vào tài khoản
+            </h5>
+            <p>TÊN TÀI KHOẢN: DINH VIET DUY</p>
+            <p style="margin-bottom: 15px;">SỐ TÀI KHOẢN: 108867502530 - VIETTINBANK</p>
+            <div class="input-gr">
+              <div>
+                <p>Số tiền cần nạp</p>
+              </div>
+              <input type="text" value="50000" id="bank_money" min="50000">
+            </div>
+            <div class="input-gr">
+              <p class="pay_content">Nội dung: <span class="bank_infoadd">KSDJSDH</span></p>
+            </div>
+            <div class="input-gr">
+              <button class="btn btn-outline-info create_qr">TẠO QR NẠP</button>
+            </div>
+            <div class="image_bank">
+              <!-- <img width="400" height="400" src="https://img.vietqr.io/image/vietinbank-108867592530-compact2.jpg?amount=50000&addInfo=xinchao" alt="qr chuyển khoản"> -->
+            </div>
+            <div class="load_bank">
+              <img src="./assets/img/Loading_2.gif" width="30" height="30"> <span style="font-size: 13px;"
+                class="transaction_note">Chọn "TẠO QR NẠP" để tạo hóa đơn</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="toasts">
+      <div class="toast">
+        <div class="toast-header">
+          Thông báo mới
+          <button type="button" class="btn-close" data-bs-dismiss="toast" style="margin-left: auto;"></button>
+        </div>
+        <div class="toast-body">
+          Xin vui lòng không sử dụng
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/js/index.js"></script>
+  <script src="./assets/js/func.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

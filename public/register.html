@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets//css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Đăng nhập</title>
+</head>
+<body>
+    <section>
+        <div>
+            <p style="color:white;">Đăng ký Nttbchecker.vn</p>
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="text" class="name" required>
+                <label for="">Tên của bạn</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="text" class="username" required>
+                <label for="">Tên đăng nhập</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="text" class="phonenumber" required>
+                <label for="">Số điện thoại</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" class="password" required>
+                <label for="">Mật khẩu</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" class="repassword" required>
+                <label for="">Xác nhận mật khẩu</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <select class="form-select" name="provinceSelect" id="provinceSelect">
+                    <option>Khu vực</option>
+                </select>
+            </div>
+            <button class="submit">Đăng ký</button>
+            <div class="register">
+                <div class="forget">
+                    <a href="login.html"  style="color: aliceblue;">Đăng nhập tài khoản</a>
+                </div>
+            </div>
+        </div>
+        <script>
+            window.onload = function()
+            {
+                const submit = document.querySelector('.submit');
+                submit.addEventListener('click',()=>{
+                    var username = document.getElementsByClassName('username')[0].value;
+                    var password =  document.getElementsByClassName('password')[0].value;
+                    var repassword =  document.getElementsByClassName('repassword')[0].value;
+                    if(password != repassword){
+                        alert("Mật khẩu không khớp. Vui lòng kiểm tra lại!","Thông báo");
+                        return;
+                    }
+                     if(username.length < 5){
+                        alert("Tên người dùng phải hơn 6 ký tự ","Thông báo");
+                        return;
+                    }
+                    if(password.length < 5){
+                        alert("Mật khẩu phải hơn 6 ký tự ","Thông báo");
+                        return;
+                    }
+                    axios.post('api/user/register', {
+                        username,
+                        password
+                    })
+                        .then((response) => {
+                            var res = response.data
+                            if(res.success == true){
+                                login(
+                                    username,
+                                    password
+                                )
+                            }else{
+                                alert(res.msg)
+                            }
+                            // handle success response
+                        })
+                        .catch((error) => {
+                            console.error(error);
+                            // handle error response
+                    });
+                })
+                const login = (username,password) => {
+                    axios.post('api/user/login', {
+                        username,
+                        password
+                    })
+                        .then((response) => {
+                            var res = response.data
+                            if(res.success == true){
+                                localStorage.setItem('user',JSON.stringify(res))
+                                location.href = '/'
+                            }else{
+                                alert("Đăng nhập thất bại")
+                            }
+                            // handle success response
+                        })
+                        .catch((error) => {
+                            console.error(error);
+                            // handle error response
+                    });
+                }
+                const khuvuc = () =>{
+                    var vietnamProvinces = ["An Giang", "Bà Rịa - Vũng Tàu", "Bắc Giang", "Bắc Kạn", "Bạc Liêu", "Bắc Ninh", "Bến Tre", "Bình Định", "Bình Dương", "Bình Phước", "Bình Thuận", "Cà Mau", "Cao Bằng", "Đắk Lắk", "Đắk Nông", "Điện Biên", "Đồng Nai", "Đồng Tháp", "Gia Lai", "Hà Giang", "Hà Nam", "Hà Tĩnh", "Hải Dương", "Hậu Giang", "Hòa Bình", "Hưng Yên", "Khánh Hòa", "Kiên Giang", "Kon Tum", "Lai Châu", "Lâm Đồng", "Lạng Sơn", "Lào Cai", "Long An", "Nam Định", "Nghệ An", "Ninh Bình", "Ninh Thuận", "Phú Thọ", "Quảng Bình", "Quảng Nam", "Quảng Ngãi", "Quảng Ninh", "Quảng Trị", "Sóc Trăng", "Sơn La", "Tây Ninh", "Thái Bình", "Thái Nguyên", "Thanh Hóa", "Thừa Thiên Huế", "Tiền Giang", "Trà Vinh", "Tuyên Quang", "Vĩnh Long", "Vĩnh Phúc", "Yên Bái", "Phú Yên", "Cần Thơ", "Đà Nẵng", "Hải Phòng", "Hà Nội", "TP HCM"];
+
+                        var selectElement = document.getElementById("provinceSelect"); // Replace "provinceSelect" with the ID of your select element
+                        for (var i = 0; i < vietnamProvinces.length; i++) {
+                        var option = document.createElement("option");
+                        option.value = vietnamProvinces[i];
+                        option.textContent = vietnamProvinces[i];
+                        selectElement.appendChild(option);
+                    }
+                }
+                khuvuc()
+            };
+ 
+        </script>
+    </section>
+</body>
+</html>

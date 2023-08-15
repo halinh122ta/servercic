@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <script src="../assets/js/axios.min.js"></script>
+    <script src="../assets/js/FileSaver.min.js"></script>
+    <title>Trang chủ</title>
+</head>
+<body>
+    <div id="viewport">
+        <!-- Sidebar -->
+        <div id="sidebar">
+          <header>
+            <a href="#">Quản lý</a>
+          </header>
+          <ul class="nav">
+            <li>
+              <a href="./home.html">
+                <i class="zmdi zmdi-view-dashboard"></i> Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="./price.html">
+                <i class="zmdi zmdi-link"></i> Set Giá
+              </a>
+            </li>
+            <li>
+              <a href="./history.html">
+                <i class="zmdi zmdi-link"></i> Lịch sử nạp
+              </a>
+            </li>
+            <li>
+              <a class="logout" style="cursor: pointer;">
+                <i class="zmdi zmdi-comment-more"></i> Logout
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Content -->
+        <div id="content">=
+          <div class="container-fluid">
+            <div class="button-group flex">
+            </div>
+            <style>
+              .content-table{
+                width: 100%;
+                overflow: auto;
+              }
+            </style>
+            <div class="content-table">
+                <h3>Danh sách người dùng <span class="count"></span></h3>
+                <table class="table table-bordered border-primary" style="width: 100%;overflow-x: scroll;">
+                    <thead>
+                        <th scope="row" style="width:70px;">STT</th>
+                        <th scope="row">Tên tài khoản</th>
+                        <th scope="row">Số dư</th>
+                        <th scope="row">Chức vụ</th>
+                        <th scope="row" style="text-align: center;">Edit</th>
+                    </thead>
+                    <tbody class="table-content">
+                        
+                    </tbody>
+                </table>
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group me-2 page-content" role="group" aria-label="First group">
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-pop">
+          <div class="modals" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header flex">
+                  <h5 class="modal-title">Cập nhật thông tin tài khoản</h5>
+                </div>
+                <div class="modal-body">
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control nameInput" readonly placeholder="Tên người dùng" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="input-group mb-3">
+                    <input type="number" class="form-control balanInput" readonly placeholder="Số dư hiện tại" aria-describedby="basic-addon2">
+                  </div>   
+                   <div class="input-group mb-3">
+                    <input type="text" class="form-control newPass" placeholder="Mật khẩu mới(nếu có)" aria-describedby="basic-addon2">
+                  </div> 
+                  <div class="input-group mb-3">
+                    Thao tác với số dư (Cộng số dương + , trừ số âm -)
+                    <input type="number" class="form-control balanceInput" value="0" placeholder="Nhập số tiền nạp" aria-describedby="basic-addon2">
+                  </div>                  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                  <button type="button" class="btn btn-primary" data-id="0">Lưu kết quả</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      <style>
+        .main-pop{
+          position: fixed;
+          width:100%;
+          top:0;
+          left:0;
+          min-height:100vh;
+          z-index: 9999;
+          display: none;
+        }
+        .main-pop .show{
+          display: block;
+        }
+        .flex{
+          display: flex;
+        }
+        .btn-close{
+          margin-left: auto;
+        }
+        .input-group{
+          margin-bottom: 10px;
+          width: 100%;
+        }
+        .input-group input{
+          width: 100%;
+        }
+      </style>
+      <script>
+        let apiKey;
+        async function checkLocal(){
+            var user = await localStorage.getItem('user')||undefined
+            if(user != undefined && user.length > 10){
+                var json = JSON.parse(user)
+                apiKey = json.data.apikey
+                axios.post('../api/user/admin', {
+                    apikey:apiKey
+                }).then((response) => {
+                    var res = response.data
+                    if(res.success != true){
+                        location.href = '/'
+                    }
+                    // handle success response
+                })
+            }else{
+              location.href = '/login.html'
+            }
+        }
+        checkLocal()
+        window.onload = function()
+        {
+            const mainPop = document.querySelector('.main-pop');
+            const submit = document.querySelector('.submit');
+            const logout = document.querySelector('.logout');
+            const table = document.querySelector('.table-content');
+            const balanceInput = document.querySelector('.balanceInput');
+            const btnPrimary = document.querySelector('.btn-primary');
+            const btnSecondary = document.querySelector('.btn-secondary');
+
+            const nameInput = document.querySelector('.nameInput');
+            const balanInput = document.querySelector('.balanInput');
+             const newPass = document.querySelector('.newPass');
+             
+            btnPrimary.addEventListener('click',(e)=>{
+                var _id = e.target.getAttribute('data-id')
+                var balan = balanceInput.value 
+                 var password = newPass.value 
+                axios.post('../api/user/change-person',{
+                  id:_id,
+                  balance:balan,
+                  apikey:apiKey,
+                  newPass:password
+                })
+                .then((response) => {
+                    var res = response.data
+                    if(res.success = true){
+                        alert("Thay đổi thành công")
+                        location.reload()
+                    }else{
+                      alert("Thay đổi thất bại")}
+                    // handle success response
+                })
+              })
+            logout.addEventListener('click',async ()=>{
+                var user = await localStorage.setItem('user',"")
+                location.href = '/'
+            })
+            async function load(){
+              await clearTable()
+              axios.post('../api/user/list', {
+                  apikey:apiKey
+              }).then((response) => {
+                  var res = response.data
+                  if(res.success = true){
+                      var rows = res.data
+                      for(let i = 0; i < rows.length;i++){
+                        var tr = createRow(rows[i],i+1)
+                        table.appendChild(tr)
+                      }
+                  }
+                  // handle success response
+              })
+              .catch((error) => {
+                  console.error(error);
+                  // handle error response
+              });
+            }
+            load()
+            btnSecondary.addEventListener('click',()=>{
+              mainPop.classList.toggle('show')
+            })
+            //phần thực hiện quy trình
+            function createRow(item,index){
+              var tr = document.createElement('tr');
+              tr.className = "row-"+item.id
+              //hàng 1
+              var td = document.createElement('td');
+              td.textContent = index + ""
+              tr.appendChild(td)
+              //
+              var td = document.createElement('td');
+              var input = document.createElement('span');
+              input.textContent = item.username
+              td.appendChild(input)
+              tr.appendChild(td)
+              //
+              var td = document.createElement('td');
+              var input = document.createElement('span');
+              input.textContent = item.balance
+              td.appendChild(input)
+              tr.appendChild(td)
+              //
+              var td = document.createElement('td');
+              var input = document.createElement('span');
+              input.textContent = (item.role == 1 ? "Người dùng" : "Quản lý")
+              td.appendChild(input)
+              tr.appendChild(td)
+              //
+              var td = document.createElement('td');
+              td.style.textAlign = "center"
+              td.style.cursor ="pointer"
+              td.style.color = "blue"
+              td.textContent = "Edit"
+              td.dataset.id = item.id
+              td.addEventListener('click',(e)=>{
+                var _id = e.target.getAttribute('data-id')
+                axios.post('../api/user/info-person',{
+                  id:_id,
+                  apikey:apiKey
+                })
+                .then((response) => {
+                    var res = response.data
+                    if(res.success = true){
+                        console.log(res)
+                        balanInput.value = res.data.balance
+                        nameInput.value = res.data.username
+                        btnPrimary.setAttribute("data-id",res.data.id)
+                        mainPop.classList.toggle('show')
+                    }
+                    // handle success response
+                })
+              })
+              tr.appendChild(td)
+              return tr
+            }
+            function clearTable() {
+              table.innerHTML = ""
+            }
+            function getDate(){
+              const date = new Date();
+              const hours = date.getHours().toString().padStart(2, '0');
+              const minutes = date.getMinutes().toString().padStart(2, '0');
+              const seconds = date.getSeconds().toString().padStart(2, '0');
+              const day = date.getDate().toString().padStart(2, '0');
+              const month = (date.getMonth() + 1).toString().padStart(2, '0');
+              const year = date.getFullYear().toString();
+              const formattedDate = `${hours}_${minutes}_${seconds}_${day}_${month}_${year}`;
+              console.log(formattedDate);
+              return formattedDate
+            }
+          };
+     </script>
+</body>
+</html>
